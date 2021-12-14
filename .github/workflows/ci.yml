@@ -98,7 +98,7 @@ jobs:
           ${{ needs.prerequisites.outputs.merge_target_command }}
 
       - name: Install Mercurial
-        run: brew install mercurial
+        run: brew install mercurial@5.9.3
 
       - name: Build and test
         run: sh gradlew test --info --stacktrace
